@@ -341,22 +341,35 @@ app.get('/quiz41', (req, res) => {
     const payment = req.query.payment;
     let userPaymentValue = "R$ 27,90";
     let userPaymentlink = "https://pay.kirvano.com/dc6f3e08-b7f3-41b7-a908-1eec731aba7e";
-    if (payment == 2) {
-        userPaymentValue = paymentOptions[2];
-        userPaymentlink = "https://pay.kirvano.com/36c95841-a5d0-4c12-afc9-3d7151335814";
-    } else if (payment == 3) {
-        userPaymentValue = paymentOptions[3];
-        userPaymentlink = "https://pay.kirvano.com/9b7a9bf9-e931-41fd-bb7b-ca91903c7dd7";
-    } else if (payment == 4) {
-        userPaymentValue = paymentOptions[4];
-        userPaymentlink = "https://pay.kirvano.com/a50eebf7-a7a0-4bbe-8cdc-8eeaabf8c699";
+    try {
+        if (payment == 2) {
+            userPaymentValue = paymentOptions[2];
+            userPaymentlink = "https://pay.kirvano.com/36c95841-a5d0-4c12-afc9-3d7151335814";
+        } else if (payment == 3) {
+            userPaymentValue = paymentOptions[3];
+            userPaymentlink = "https://pay.kirvano.com/9b7a9bf9-e931-41fd-bb7b-ca91903c7dd7";
+        } else if (payment == 4) {
+            userPaymentValue = paymentOptions[4];
+            userPaymentlink = "https://pay.kirvano.com/a50eebf7-a7a0-4bbe-8cdc-8eeaabf8c699";
+        }
+    } catch (e) {
+        console.log(e);
     }
-
     const userGender = req.session.gender === 'homem' ? 'Masculino' : 'Feminino';
-    const userSign = signTranslations[req.session.sign];
+    let userSign;
+    try {
+        userSign = signTranslations[req.session.sign];
+    } catch (e) {
+        userSign = "...";
+    }
     const userGoal = req.session.goal;
-    const userImage = `${userSign.toLowerCase()}_${req.session.gender.toLowerCase()}_0.png`;
-    res.render('quiz41_part1.ejs', { userGender, userSign, userGoal, userPaymentValue, userPaymentlink });
+    let userImage;
+    if (!req.session.sign || !req.session.gender) {
+        userImage = 'peixes_homem_0.png';
+    } else {
+        userImage = `${req.session.sign}_${req.session.gender}_0.png`;
+    }
+    res.render('quiz41_part1.ejs', { userGender, userSign, userGoal, userPaymentValue, userPaymentlink, userImage });
 });
 
 

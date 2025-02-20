@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.default .submit_button { font-size: 14px; background: rgb(105, 177, 63); border-radius: 30px; height: 49px; }
+
+.default .submit_button:disabled { background-color: rgb(172, 178, 188); }
+
+.default .input_group .input-block { flex: 0 0 auto; }

@@ -1,0 +1,128 @@
+app.get('/partner15', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner15', 'part_1.html'));
+});
+
+app.get('/partner23', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner23', 'part_1.html'));
+});
+
+app.get('/partner24', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner24', 'part_1.html'));
+});
+
+app.get('/partner25', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner25', 'part_1.html'));
+});
+
+app.get('/partner22', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner22', 'part_1.html'));
+});
+
+app.get('/partner13', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner13', 'part_1.html'));
+});
+
+app.get('/partner18-2', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner18-2', 'part_1.html'));
+});
+
+app.get('/partner33-3', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner33-3', 'part_1.html'));
+});
+
+app.get('/partner2', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner2', 'part_1.html'));
+});
+
+app.get('/partner33-2', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner33-2', 'part_1.html'));
+});
+
+app.get('/partner31-1', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner31-1', 'part_1.html'));
+});
+
+app.get('/partner24-2', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner24-2', 'part_1.html'));
+});
+
+app.get('/partner31', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner31', 'part_1.html'));
+});
+
+app.get('/partner30', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner30', 'part_1.html'));
+});
+
+app.get('/partner29', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner29', 'part_1.html'));
+});
+
+app.get('/partner16', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner16', 'part_1.html'));
+});
+
+app.get('/partner18', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner18', 'part_1.html'));
+});
+
+app.get('/partner27', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner27', 'part_1.html'));
+});
+
+app.get('/relationshipPayment', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/relationshipPayment', 'part_1.html'));
+});
+
+app.get('/partner20', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner20', 'part_1.html'));
+});
+
+app.get('/partner21', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner21', 'part_1.html'));
+});
+
+app.get('/partner19', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner19', 'part_1.html'));
+});
+
+app.get('/partner26', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner26', 'part_1.html'));
+});
+
+app.get('/partner28', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner28', 'part_1.html'));
+});
+
+app.get('/partner17', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner17', 'part_1.html'));
+});
+
+app.get('/partner31-3', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner31-3', 'part_1.html'));
+});
+
+app.get('/partner18-1', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner18-1', 'part_1.html'));
+});
+
+app.get('/partner33-1', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner33-1', 'part_1.html'));
+});
+
+app.get('/partner31-2', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner31-2', 'part_1.html'));
+});
+
+app.get('/partner24-1', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner24-1', 'part_1.html'));
+});
+
+app.get('/partner32', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner32', 'part_1.html'));
+});
+
+app.get('/partner33', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/results2/partner33', 'part_1.html'));
+});
+
